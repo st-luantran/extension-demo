@@ -1,7 +1,19 @@
 query Input {
+  localization {
+    country {
+      isoCode
+    }
+  }
   cart {
-    lines {
-      quantity
+    buyerIdentity {
+      customer {
+        numberOfOrders
+      }
+    }
+    cost {
+      subtotalAmount {
+        amount
+      }
     }
   }
 }

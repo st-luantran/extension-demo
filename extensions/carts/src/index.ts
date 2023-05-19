@@ -1,6 +1,6 @@
 import { InputQuery, FunctionResult, FunctionError } from "../generated/api";
 
-export default (input: any): any => {
+export default (input: InputQuery): FunctionResult => {
   const error = {
     localizedMessage:
       "There is an order maximum of $1,000 for customers without established order history",

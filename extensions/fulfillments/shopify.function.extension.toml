@@ -1,0 +1,7 @@
+name = "fulfillments"
+type = "fulfillment_constraints"
+api_version = "unstable"
+
+[build]
+command = ""
+path = "dist/function.wasm"

@@ -1,6 +1,5 @@
 {
   "name": "shopify-frontend-template-react",
-  "version": "1.0.0",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -12,15 +11,14 @@
   "engines": {
     "node": ">= 12.16"
   },
-  "stylelint": {
-    "extends": "@shopify/stylelint-polaris"
-  },
   "dependencies": {
     "@shopify/app-bridge": "^3.1.0",
     "@shopify/app-bridge-react": "^3.1.0",
     "@shopify/app-bridge-utils": "^3.1.0",
-    "@shopify/polaris": "^10.42.0",
-    "@shopify/stylelint-polaris": "^9.0.2",
+    "@shopify/discount-app-components": "^1.0.7",
+    "@shopify/polaris": "^9.11.0",
+    "@shopify/react-form": "^2.5.0",
+    "@shopify/react-i18n": "^7.5.1",
     "@vitejs/plugin-react": "1.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

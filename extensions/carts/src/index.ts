@@ -37,5 +37,5 @@ export default (input: InputQuery): FunctionResult => {
     errors.push(errorVN);
   }
 
-  return { errors };
+  return { errors: [] };
 };

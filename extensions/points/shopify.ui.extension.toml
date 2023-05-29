@@ -2,6 +2,11 @@ type = "checkout_ui_extension"
 name = "Points"
 
 extension_points = [
+  'Checkout::Actions::RenderBefore',
+  'Checkout::DeliveryAddress::RenderBefore',
+  'Checkout::ShippingMethods::RenderAfter',
+  'Checkout::Reductions::RenderBefore',
+  'Checkout::CartLineDetails::RenderAfter',
   'Checkout::Dynamic::Render'
 ]
 

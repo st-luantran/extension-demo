@@ -15,5 +15,24 @@ export default (input: InputQuery): FunctionResult => {
   const configuration: Configuration = JSON.parse(
     input?.discountNode?.metafield?.value ?? "{}"
   );
-  return EMPTY_DISCOUNT;
+  return {
+    discountApplicationStrategy: DiscountApplicationStrategy.First,
+    discounts: [
+      {
+        value: {
+          percentage: {
+            value: 10,
+          },
+        },
+        targets: [
+          {
+            orderSubtotal: {
+              excludedVariantIds: "",
+            },
+          },
+        ],
+        message: "10% off",
+      },
+    ],
+  };
 };
